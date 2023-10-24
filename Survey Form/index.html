@@ -12,71 +12,101 @@
     <p id="description">Registra tu mascota para obtener el chip de ubicación</p>
 
     <form id="survey-form">
-        <fieldset class="as"><label for="name" id="name-label">
-            <i class="fa-solid fa-user  icon"></i>
-            <p class="humano">Humano</p>
-            <input type="text" id="name" placeholder="Pedro Navaja">
-        </label></fieldset>
+
+        <div class="form-section">
+            <label for="name" id="name-label">
+                <i class="fa-solid fa-user  icon"></i>
+                Humano
+                <input type="text" id="name" placeholder="Pedro Navaja" required>
+            </label>
+        </div>
+        <div class="form-section">
+            <label for="email" id="email-label">
+                <i class="fa-solid fa-envelope icon"></i>
+                Email
+                <input type="email"  id="email" placeholder="pedro@correo.com" required>
+            </label>
+        </div>
+        <div class="form-section">
+            <label for="number" id="number-label">
+                <i class="fa-brands fa-whatsapp icon"></i>
+                Whatsapp
+                <input type="number" id="number" min="10" max="10" placeholder="3001234567">
+            </label>
+        </div>
+        <div class="form-section">
+            <label for="pet" id="pet-label" class="left">
+                <i class="fa-solid fa-paw icon"></i>
+                Mascota
+                <input type="text" id="pet" placeholder="firulais">
+            </label>
+        </div>
+        <div class="form-section">
+            <label for="dropdown" class="left">
+                Especie
+                <select id="dropdown">
+                    <option value="1">Perro</option>
+                    <option value="2">Gato</option>
+                </select>
+            </label>
+        </div>
+        <div class="form-section">
+            <p>Sexo</p>
+            <label for="macho">
+                <input type="radio" name="sexo" id="macho" value="macho-valor">Macho
+            </label>
+            <label for="hembra">
+                <input type="radio" name="sexo" id="hembra" value="hembra-valor">Hembra
+            </label>
+        </div>
+        <div class="form-section">
+            <i class="fa-solid fa-circle-plus icon"></i>
+            
+                Selecciona servicios adicionales
+            
+            <label for="checkbox1">
+                <input type="checkbox" value="App" id="checkbox1">App
+            </label>
+            <label for="checkbox2">
+                <input type="checkbox" value="news" id="checkbox2">Noticias
+            </label>
+            <label for="checkbox3">
+                <input type="checkbox" value="vet" id="checkbox3">Veterinario
+            </label>
+            <label for="checkbox4">
+                <input type="checkbox" value="photo" id="checkbox4">Fotos
+            </label>
+        </div>
+        <div class="form-section">
+            <label for="comments">
+                Déjanos un comentario
+                
+           <textarea cols="30" rows="10" placeholder="opcional"></textarea>
+           </label>
+        </div>
+        <div class="form-section">
+            <input type="submit" id="submit">
+
+        </div>
+
+
         
         
-        <label for="email" id="email-label">
-            <i class="fa-solid fa-envelope icon"></i>
-            Email
-            <input type="email"  id="email" placeholder="pedro@correo.com">
-        </label>
         
-        <label for="number" id="number-label">
-            <i class="fa-brands fa-whatsapp icon"></i>
-            Whatsapp <span>+57</span>
-            <input type="number" id="number" min="10" max="10" placeholder="3001234567">
-        </label>
         
-        <label for="pet" id="pet-label" class="left">
-            <i class="fa-solid fa-paw icon"></i>
-            Mascota
-            <input type="text" id="pet" placeholder="firulais">
-        </label>
         
-        <label for="dropdown" class="left">
-            Especie
-            <select id="dropdown">
-                <option value="1">Perro</option>
-                <option value="2">Gato</option>
-            </select>
-        </label>
+       
         
-        <p>Sexo</p>
-        <label for="macho">
-            <input type="radio" name="sexo" id="macho">Macho
-        </label>
-        <label for="hembra">
-            <input type="radio" name="sexo" id="hembra">Hembra
-        </label>
         
-        <i class="fa-solid fa-circle-plus icon"></i>
-        <p>
-            Selecciona servicios adicionales
-        </p>
-        <label for="checkbox1">
-            <input type="checkbox" value="App">App
-        </label>
-        <label for="checkbox2">
-            <input type="checkbox" value="news">Noticias
-        </label>
-        <label for="checkbox3">
-            <input type="checkbox" value="vet">Veterinario
-        </label>
-        <label for="checkbox4">
-            <input type="checkbox" value="photo">Fotos
-        </label>
         
-        <label for="comments">
-             Déjanos un comentario
-             
-        <textarea cols="30" rows="10" placeholder="opcional"></textarea>
-        </label>
+       
         
-        <input type="submit" id="submit">
+        
+        
+       
+        
+        
+        
     </form>
 
 </body>
