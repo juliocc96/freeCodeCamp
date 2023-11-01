@@ -1,0 +1,89 @@
+html{
+    font-size: 16px;
+}
+
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+h1{
+    font-size: min(5vw,1.2em);
+}
+
+header{
+    width: 100vw;
+    height: fit-content;
+    background-color: #140835;
+    display: flex;
+}
+
+nav{
+    width: 100%;
+}
+
+nav> ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-block: 0;
+    height: 100%;
+    padding-inline-start: 0px;
+}
+
+nav ul li{
+    display:block;
+    color: #ffffff;
+    margin: 0.2em;
+    font-size: 2em;
+}
+
+nav ul li:hover{
+    background-color: #ffffff9c;
+    color: #140835af;
+}
+
+li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main{
+    padding-top: 30px;
+    background-color: #4a09099c;
+    bottom: 100;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 0;
+    margin: -1rem auto;
+    background-color: #ffffff;
+}
+
+#img-div{
+    background-color: beige;
+}
+
+#image{
+    margin: 20px auto;
+    display: block;
+    max-width: 36vh;
+    height: auto;
+}
+
+.contenedor-albumes h2:first-child{
+    font-size: 2em;
+    text-align: center;
+    
+}
+
+
