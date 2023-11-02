@@ -14,18 +14,11 @@ body{
 }
 
 h1{
-    font-size: min(5vw,1.2em);
+    font-size: max(5vw,1.2em);
 }
 
 header{
-    width: 100vw;
-    height: fit-content;
     background-color: #140835;
-    display: flex;
-}
-
-nav{
-    width: 100%;
 }
 
 nav> ul{
@@ -33,7 +26,6 @@ nav> ul{
     justify-content: space-between;
     flex-wrap: wrap;
     margin-block: 0;
-    height: 100%;
     padding-inline-start: 0px;
 }
 
@@ -41,7 +33,7 @@ nav ul li{
     display:block;
     color: #ffffff;
     margin: 0.2em;
-    font-size: 2em;
+    font-size: 4vw;
 }
 
 nav ul li:hover{
@@ -57,78 +49,113 @@ li a {
 main{
     padding-top: 30px;
     background-color: #4a09099c;
-    bottom: 100;
 }
 
 h1{
     text-align: center;
     text-transform: uppercase;
-    font-size: 2em;
-    padding: 0;
+    font-size: 8vw;
     margin: -1rem auto;
 }
 
 #image{
     margin: 20px auto;
     display: block;
-    max-width: 36vw;
+    max-width: 33vw;
     height: auto;
 }
 
+#img-caption{
+    font-size: 3vw;
+}
+
 .contenedor-albumes h2:first-child{
-    font-size: 2em;
+    font-size: 5vw;
     text-align: center;
-    
+    margin-top: 2em;
 }
 
 .info-album{
     display: flex;
-    background-color: #11f3af;
     flex-wrap: wrap;
-    margin: 2em auto;
+    margin: auto auto;
 }
 
 .titulo-album{
-    background-color: #e8ef0e;
-    width: 100vh;
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.album{
+    border: 1px solid #140835;
+    background-color: #4a09091f;
+    border-radius: 10px;
+    padding: 0;
+    margin: 5vw;
 }
 
 .album h3{
-    background-color: #b41594;
     text-align: center;
-    font-size: 3em;
-    margin: 1em 2;
-    display: inline;
-    align-items: center;
-    padding: 1em;
+    font-size: 8vw;
+    margin-right: 0;
+}
+
+@media only screen and (min-width: 700px){
+    .album h3{
+        margin-right:2em;
+    }
 }
 
 .portada{
-    background-color: #f209df;
     margin: 1em 1em;
-    display: flex;
-    align-items: center;
 }
 
 .img-portada{
     display: block;
-    max-width: 40vh;
+    max-width: 30vw;
     height: auto;
     padding: 0;
-    align-self: center;
 }
+
+
+
+/* @media (max-width: 400px) {
+    .img-portada{
+        max-width: 60vw;
+        height: auto;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .img-portada{ 
+        max-width: 40vw;
+        height: auto;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .img-portada{
+        max-width: 30vw;
+        height: auto;
+    }
+  } */
 
 .contenedor-citas{
     display: flex;
-    flex-wrap: nowrap;
     width: 100vw;
 }
 
+blockquote{
+    background-color: #fff;
+    display: inline;
+    font-size: 5vw ;
+}
+
 .cita{
-    background-color: #ebc53a;
-    border:1px solid #140835;
-    width: 50vw;
+    background-color: #4a09091f;
+    width: 50%; 
     padding: 0;
     margin: 1em 1vw;
     text-align: center;
@@ -136,5 +163,32 @@ h1{
 
 .verso{
     font-family: 'Grape Nuts', cursive;
-    font-size: 2em;
+    font-size: 100%;
 }
+
+#saber-mas{
+    background-color: #4a09091f;
+    padding: 2vw 2vw;
+    font-size: 4vw;
+}
+
+#saber-mas a{
+    text-decoration: none;
+    color: #140835;    
+}
+
+#saber-mas a:hover{
+    text-decoration: underline;
+    font-size: 5vw;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.redes p{
+    display: inline;
+}
+ 
