@@ -10,50 +10,110 @@
 
 <body>
 
-    <header>
+    
         <nav id="navbar">
             <header class="main-header">HTML <code>&lt;form&gt;</code> tag Documentation </header>
             <ul>
 
                 <li><a href="#introduccion" class="nav-link">Introducción</a></li>
-                <li><a href= "#sintaxis_basica" class="nav-link">Sintaxis Básica</a></li>
-                <li><a href="#atributos" class="nav-link">Atributos/a></li>
+                <li><a href="#sintaxis_basica" class="nav-link">Sintaxis Básica</a></li>
+                <li><a href="#atributos" class="nav-link">Atributos</a></li>
                 <li><a href="#elementos" class="nav-link">Elementos</a></li>
-                    <ul class="sub-link">
-                        <li><a href="#elemento_form" class="nav-link">&lt;form&gt;</li>
-                        <li><a href="#elemento_input" class="nav-link">&lt;input&gt;</li>
-                    </ul>
-                <li><a href="#api-forms" class="nav-link">API Forms</a></li>
+
+                        <li><a href="#elemento_form" class="nav-link sub-link">&lt;form&gt;</a></li>
+                        <li><a href="#elemento_input" class="nav-link sub-link">&lt;input&gt;</a></li>
+                                    <li><a href="#api-forms" class="nav-link">API Forms</a></li>
                 <li><a href="#sumario" class="nav-link">Sumario</a></li>
                 
             </ul>
  
         </nav>
         
-    </header>
 
 
     <main id="main_doc">
 
-        <section id="intr+duccion" class="main-section">
+        <section id="introduccion" class="main-section">
             <header>Introducción</header>
-            <article>
 
+            <article>
+                <p>Los formularios web son la 
+                    interface más importante de todas, permiten a los usuarios insertar datos, tomar 
+                    decisiones, comunicar información y cambiar el comportamiento de una aplicación.</p>
+            
             </article>
+
         </section>
 
-        <section id=#sintaxis_basica" class="main-section">
+        <section id="sintaxis_basica" class="main-section">
             <header>
                 Sintaxis Básica
             </header>
             <article>
-
+                <code>&lt;form name="miformulario" id="miformulario" method="get"&gt;
+ &lt;input type="text" name="nombre" id="nombre"&gt;
+ &lt;input type="submit" value="Enviar"&gt;
+ &lt;/form&gt;</code>
             </article>
         </section>
 
         <section id="atributos" class="main-section">
             <header>Atributos</header>
             <article>
+
+                <table>
+
+                    <caption>Lista de <code>&lt;form&gt;
+                    </code>atributos</caption>
+
+                    <thead>
+                        <tr>
+                            <th>Atributo</th>
+                            <th>Descripción</th>
+                        </tr>
+                    
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>accept-charset</td>
+                            <td>Especifica las codificaciones de caracteres utilizadas para el envío de formularios</td>
+                        </tr>
+                        <tr>
+                            <td>action</td>
+                            <td>Especifica dónde enviar los datos del formulario cuando se envía un formulario</td>
+                        </tr>
+                        <tr>
+                            <td>autocomplete</td>
+                            <td>Especifica si un formulario debe tener activado o desactivado el autocompletado</td>
+                        </tr>
+                        <tr>
+                            <td>enctype</td>
+                            <td>Especifica cómo se deben codificar los datos del formulario al enviarlos al servidor (solo para método="post")</td>
+                        </tr>
+                        <tr>
+                            <td>method</td>
+                            <td>Especifica el método HTTP que se utilizará al enviar datos del formulario</td>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>Especifica el nombre del formulario</td>
+                        </tr>
+                        <tr>
+                            <td>novalidate</td>
+                            <td>Especifica que el formulario no debe validarse cuando se envía</td>
+                        </tr>
+                        <tr>
+                            <td>rel</td>
+                            <td>Especifica la relación entre un recurso vinculado y el documento actual</td>
+                        </tr>
+                        <tr>
+                            <td>target</td>
+                            <td>Especifica dónde mostrar la respuesta que se recibe después de enviar el formulario</td>
+                        </tr>
+                    </tbody>
+
+                </table>
 
             </article>
         </section>
@@ -62,12 +122,67 @@
             <header>Elementos</header>
             <article>
 
-            </article>
-        </section>
+                <table>
+                    <caption>Elementos de Form</caption>
+                    <thead>
+                        <tr>
+                            <th>Etiqueta</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>&lt;form&gt;</code></td>
+                            <td>Define un formulario HTML para la entrada del usuario</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;input&gt;</code></td>
+                            <td>Define un control de entrada</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;textarea&gt;</code></td>
+                            <td>Define un control de entrada multilínea (área de texto)</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;label&gt;</code></td>
+                            <td>Define una etiqueta para un elemento <code>&lt;input&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;fieldset&gt;</code></td>
+                            <td>Agrupa elementos relacionados en un formulario</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;legend&gt;</code></td>
+                            <td>Define un título para un elemento <code>&lt;fieldset&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;select&gt;</code></td>
+                            <td>Define una lista despegable</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;optgroup&gt;</code></td>
+                            <td>Define un grupo de opciones relacionadas en una lista desplegable</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;option&gt;</code></td>
+                            <td>Define una opción en una lista desplegable</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;button&gt;</code></td>
+                            <td>Define un botón en el que se puede hacer clic</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;datalist&gt;</code></td>
+                            <td>Especifica una lista de opciones predefinidas para controles de entrada</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;output&gt;</code></td>
+                            <td>Define el resultado de un cálculo</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-        <section id="elemento_form" class="main-section sub-elemento">
-            <header>&lt;form&gt;</header>
-            <article></article>
+            </article>
         </section>
 
         <section id="elemento_input" class="main-section sub-elemento">
