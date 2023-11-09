@@ -15,15 +15,13 @@
             <header class="main-header">HTML <code>&lt;form&gt;</code> tag Documentation </header>
             <ul>
 
-                <li><a href="#introduccion" class="nav-link">Introducción</a></li>
-                <li><a href="#sintaxis_basica" class="nav-link">Sintaxis Básica</a></li>
-                <li><a href="#atributos" class="nav-link">Atributos</a></li>
-                <li><a href="#elementos" class="nav-link">Elementos</a></li>
+                <li><a href="#Introduccion" class="nav-link">Introduccion</a></li>
+                <li><a href="#Sintaxis_Basica" class="nav-link">Sintaxis Basica</a></li>
+                <li><a href="#Atributos" class="nav-link">Atributos</a></li>
+                <li><a href="#Elementos" class="nav-link">Elementos</a></li>
 
-                        <li><a href="#elemento_form" class="nav-link sub-link">&lt;form&gt;</a></li>
-                        <li><a href="#elemento_input" class="nav-link sub-link">&lt;input&gt;</a></li>
-                                    <li><a href="#api-forms" class="nav-link">API Forms</a></li>
-                <li><a href="#sumario" class="nav-link">Sumario</a></li>
+                        <li><a href="#&lt;input&gt;" class="nav-link sub-link">&lt;input&gt;</a></li>
+                                    <li><a href="#API_Forms" class="nav-link">API Forms</a></li>
                 
             </ul>
  
@@ -31,10 +29,10 @@
         
 
 
-    <main id="main_doc">
+    <main id="main-doc">
 
-        <section id="introduccion" class="main-section">
-            <header>Introducción</header>
+        <section id="Introduccion" class="main-section">
+            <header>Introduccion</header>
 
             <article>
                 <p>Los formularios web son la 
@@ -45,22 +43,24 @@
 
         </section>
 
-        <section id="sintaxis_basica" class="main-section">
+        <section id="Sintaxis_Basica" class="main-section">
             <header>
-                Sintaxis Básica
+                Sintaxis Basica
             </header>
             <article>
-                <code>&lt;form name="miformulario" id="miformulario" method="get"&gt;
- &lt;input type="text" name="nombre" id="nombre"&gt;
- &lt;input type="submit" value="Enviar"&gt;
- &lt;/form&gt;</code>
+                <p>
+                    <code>&lt;form name="miformulario" id="miformulario" method="get"&gt;
+                     &lt;input type="text" name="nombre" id="nombre"&gt;
+                     &lt;input type="submit" value="Enviar"&gt;
+                     &lt;/form&gt;</code>
+                </p>
             </article>
         </section>
 
-        <section id="atributos" class="main-section">
+        <section id="Atributos" class="main-section">
             <header>Atributos</header>
             <article>
-
+                    <p>Este elemnto tiene una amplia lista de atributos que podrás ver a continuación:</p>
                 <table>
 
                     <caption>Lista de <code>&lt;form&gt;
@@ -118,10 +118,10 @@
             </article>
         </section>
 
-        <section id="elementos" class="main-section">
+        <section id="Elementos" class="main-section">
             <header>Elementos</header>
             <article>
-
+                <p>Anidados a un elemento <code>&lt;form&gt;</code> se pueden agregar los siguientes:</p>
                 <table>
                     <caption>Elementos de Form</caption>
                     <thead>
@@ -185,24 +185,121 @@
             </article>
         </section>
 
-        <section id="elemento_input" class="main-section sub-elemento">
+        <section id="&lt;input&gt;" class="main-section sub-elemento">
             <header>&lt;input&gt;</header>
-            <article></article>
+            <article>
+                <p>Estos son los tipos de <code>&lt;input&gt;</code> que pueden ser utlizados en HTML:</p>
+           
+                    <ul class="tipos-input">
+                        <li class="li-tipos-input"><code>&lt;input type="button"&gt;</code></li>
+                        <li class="li-tipos-input"><code>&lt;input type="checkbox"&gt;</code></li>
+                        <li class="li-tipos-input"><code>&lt;input type="color"&gt;</code></li>
+                        <li class="li-tipos-input"><code>&lt;input type="date"&gt;</code></li>
+                        <li class="li-tipos-input"><code>&lt;input type="datetime-loca"&gt;</code></li>
+                        <li class="li-tipos-input"><code>&lt;input type="email"&gt;</code></li>
+                        <li class="li-tipos-input"><code>&lt;input type="file"&gt;</code></li>
+                        <li class="li-tipos-input"><code>&lt;input type="hidden"&gt;</code></li>
+                        <li class="li-tipos-input"><code>&lt;input type="image"&gt;</code></li>
+                        <li class="li-tipos-input"><code>&lt;input type="month"&gt;</code></li>
+                        <li class="li-tipos-input"><code>&lt;input type="number"&gt;</code></li>
+                        <li class="li-tipos-input"><code>&lt;input type="password"&gt;</code></li>
+                        <li class="li-tipos-input"><code>&lt;input type="radio"&gt;</code></li>
+                        <li class="li-tipos-input"><code>&lt;input type="range"&gt;</code></li>
+                        <li class="li-tipos-input"><code>&lt;input type="reset"&gt;</code></li>
+                        <li class="li-tipos-input"><code>&lt;input type="search"&gt;</code></li>
+                        <li class="li-tipos-input"><code>&lt;input type="submit"&gt;</code></li>
+                        <li class="li-tipos-input"><code>&lt;input type="tel"&gt;</code></li>
+                        <li class="li-tipos-input"><code>&lt;input type="text"&gt;</code></li>
+                        <li class="li-tipos-input"><code>&lt;input type="time"&gt;</code></li>
+                        <li class="li-tipos-input"><code>&lt;input type="url"&gt;</code></li>
+                        <li class="li-tipos-input"><code>&lt;input type="week"&gt;</code></li>
+                    </ul>
+           
+            </article>
         </section>
 
-        <section id="api_forms" class="main-section">
+        <section id="API_Forms" class="main-section">
             <header>API Forms</header>
             <article>
+                <p>Los formularios HTML cuentan con su propia API para personalizar todos los 
+                    aspectos de procesamiento y validación.</p>
+                
+                <ul class="api-list">
+                    <li class="api-li"><code>setCustomValidity()</code>
+                        <p class="definicion">Permite crear un mensaje de error personalizado cuando se envía un formulario con algún elemento inválido</p>
+                    </li>
+                    <li class="api-li"><code>ValidityState</code>
+                        <h4>Validación en tiempo real</h4>
+                        <p class="definicion">
+                            Los campos son sólo validados cuando 
+el botón tipo submit es presionado. Para mejorar esto, podemos agregar una escucha al formulario, cada vez que el usuario modifica un campo, escribiendo o cambiando su 
+contenido, una función de JS puede ser ejecutada para responder a este evento.
 
+                        </p>
+                    </li>
+
+                </ul>
+                <h4>Propiedades de validación</h4>
+                <p class="definicion">ValidityState retornará el estado de un elemento 
+                    considerando cada uno de los posibles estados de validación. Si cada condición es válida 
+                    entonces el valor del atributo valid será true (verdadero). </p>
+                <p>La siguiente tabla muestra los posibles estados de validación que puedes encontrar:</p>
+                <table>
+                    <thead>
+                        <caption>Estados de validación</caption>
+                        <tr>
+                            <th>Estado</th>
+                            <th>Definición</th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td><code>&lt;valueMissing&gt;</code></td>
+                                <td> Este estado es <code>true</code> (verdadero) cuando el atributo <code>required</code> fue 
+                                    declarado y el campo está vacío</td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;typeMismatch&gt;</code></td>
+                                <td>Este estado es <code>true</code> (verdadero) cuando la sintaxis de la entrada no 
+                                    corresponde con el tipo especificado (por ejemplo, si el texto insertado en un tipo de 
+                                    campo <code>email</code> no es una dirección de email válida)</td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;patternMismatch&gt;</code></td>
+                                <td>Este estado es <code>true</code> (verdadero) cuando la entrada no corresponde con 
+                                    el patrón provisto por el atributo <code>pattern</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;tooLong&gt;</code></td>
+                                <td>Este estado es <code>true</code> (verdadero) cuando el atributo <code>maxlength</code> fue declarado y 
+                                    la entrada es más extensa que el valor especificado para este atributo</td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;rangeUnderflow&gt;</code></td>
+                                <td>Este estado es <code>true</code> (verdadero) cuando el atributo <code>min</code> fue declarado y 
+                                    la entrada es menor que el valor especificado para este atributo</td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;rangeOverflow&gt;</code></td>
+                                <td>Esta estado es <code>true</code> (verdadero) cuando el atributo <code>max</code> fue declarado y la 
+                                    entrada es más grande que el valor especificado para este atributo</td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;stepMismatch&gt;</code></td>
+                                <td> Este estado es <code>true</code> (verdadero) cuando el atributo <code>step</code> fue declarado y 
+                                    su valor no corresponde con los valores de atributos como <code>min</code>, <code>max</code> y <code>value</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;customError&gt;</code></td>
+                                <td>Este estado es <code>true</code> (verdadero) cuando declaramos un error personalizado</td>
+                            </tr>
+                         </tbody>
+                    </thead>
+                </table>
+            
             </article>
         </section>
 
-        <section id="sumario" class="main-section">
-            <header>Sumario</header>
-            <article>
-
-            </article>
-        </section>
+      
 
 
     </main>

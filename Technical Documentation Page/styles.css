@@ -15,7 +15,6 @@ body{
 
 
 #navbar{
-    background-color: #8c8c8c;
     position: fixed;
     top:0;
     left:0;
@@ -32,7 +31,7 @@ header{
     text-align: center;
 }
 
-#main_doc header{
+#main-doc header{
     text-align: left;
 
 }
@@ -60,15 +59,13 @@ header{
 
 
 
-#main_doc{
+#main-doc{
     position: absolute;
     margin-left: 25vw;
-    background-color: #e87e7e;
     width: 75vw;
 }
 
 section{
-    background-color: #5b3655;
     font-size: 1.8rem;
     margin-bottom: 10px;
     padding-left: 5vw;
@@ -87,4 +84,18 @@ table{
 table, th ,td{
     border:1px solid black;
     border-collapse: collapse;
+}
+
+@media only screen and(max-width:320px){
+    header{
+        font-size: 1em;
+    }
+    
+    section{
+        font-size: 1rem;
+    }
+    
+    article{
+        font-size: 0.8rem;
+    }
 }
