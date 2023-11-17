@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <section id="header_page" class="heading">
+        <header id="header">
+          <div class="mh-container">
+            <nav id="nav-bar">
+
+            <div class="mh-brand-wrapper">
+              <img
+                src="./img/spotify-logo-png-7053.png"
+                alt=""
+                class="header-img"
+                id="header-img"
+              />
+              <h2>Spotify</h2>
+            </div>
+              <ul class="nav-ul">
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#premium">Premium</a></li>
+                <li><a class="nav-link" href="#prices">Precios</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </section>
+
+      <section class="intro">
+        <img
+          src="https://www-growth.scdn.co/static/download/all-devices.svg"
+          alt="devices"
+          loading="lazy"
+        />
+        <h3>One account, listen everywhere.</h3>
+        <ul class="devices-list">
+          <li>MOBILE</li>
+          <li>COMPUTER</li>
+          <li>TABLE</li>
+          <li>CAR</li>
+          <li>PLAYSTATION</li>
+          <li>XBOX</li>
+          <li>TV</li>
+          <li>SPEAKER</li>
+          <li>WEB PLEAYER</li>
+        </ul>
+      </section>
+
+      <section class="publicity">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/JiMY2wdkBAw?si=l4GkqNqS3Jp335VS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input type="email" name="email" id="email" placeholder="user@spotify.com">
+        <input type="submit" value="Enviar" id="submit">
+        </form>
+      </section>
+
+
+      <section id="features" class="info-container">
+        <article>
+          <header>
+            <h2>¿Por qué Spotify?</h2>
+          </header>
+          <ul class="info-list">
+            <li>
+              <i class="fa-solid fa-circle-play info-icon"></i>
+              <p class="info-title">Play your favorites</p>
+              <p class="info-content">
+                Listen to the songs you love, and discover new music and
+                podcasts.
+              </p>
+            </li>
+            <li>
+              <i class="fa-solid fa-rectangle-list info-icon"></i>
+              <p class="info-title">Playlists made easy</p>
+              <p class="info-content">
+                We'll help you make playlists. Or enjoy playlists made by music
+                experts.
+              </p>
+            </li>
+            <li>
+              <i class="fa-solid fa-heart info-icon"></i>
+              <p class="info-title">Make it yours</p>
+              <p class="info-content">
+                Tell us what you like, and we'll recommend music for you.
+              </p>
+            </li>
+            <li>
+              <i class="fa-solid fa-signal info-icon"></i>
+              <p class="info-title">Save mobile data</p>
+              <p class="info-content">
+                To use less data when you play music, turn on Data Saver in
+                Settings.
+              </p>
+            </li>
+          </ul>
+        </article>
+        <a href="#header_page" class="back-last-section">
+          <iconify-icon
+            icon="emojione-monotone:up-arrow"
+            class="go-back-button"
+          ></iconify-icon>
+        </a>
+      </section>
+
+      <section id="premium" class="info-container">
+        <article>
+          <header>
+            <h2>¿Por qué cambiarse a Premium?</h2>
+          </header>
+          <main>
+            <ul class="info-list">
+              <li>
+                <iconify-icon
+                  icon="arcticons:music-downloader"
+                  class="info-icon"
+                ></iconify-icon>
+                <p class="info-title">Descarga tu música.</p>
+                <p class="info-content">Escúchala desde cualquier lugar.</p>
+              </li>
+              <li>
+                <iconify-icon
+                  icon="mdi:ads-off"
+                  class="info-icon"
+                ></iconify-icon>
+                <p class="info-title">Escucha música sin anuncios.</p>
+                <p class="info-content">
+                  Disfruta de tu música sin interrupciones.
+                </p>
+              </li>
+              <li>
+                <iconify-icon
+                  icon="vaadin:random"
+                  class="info-icon"
+                ></iconify-icon>
+                <p class="info-title">
+                  Reproduce canciones en el orden que quieras.
+                </p>
+                <p class="info-content">
+                  Cualquier canción en cualquier orden.
+                </p>
+              </li>
+              <li>
+                <iconify-icon
+                  icon="streamline:ai-generate-music-spark"
+                  class="info-icon"
+                ></iconify-icon>
+                <p class="info-title">Mejor calidad de sonido.</p>
+                <p class="info-content">Siente el sonido</p>
+              </li>
+            </ul>
+          </main>
+        </article>
+
+        <a href="#features" class="back-last-section">
+          <iconify-icon
+            icon="emojione-monotone:up-arrow"
+            class="go-back-button"
+          ></iconify-icon>
+        </a>
+      </section>
+
+      <section id="prices" class="info-container">
+        <article>
+            <header>
+                <h2 class="prices-h2">Elige tu plan Premium</h2>
+                <p class="prices-p">Escucha sin límites en tu teléfono, tus altavoces y otros dispositivos.</p>
+            </header>
+            <main>
+                <ul class="info-list prices-list">
+
+                  <li class="price-card-container">
+                    <article class="price-card">
+                      <header class="price-card-header">
+                        <h3>Individual</h3>
+                        <p class="price-card-precio">$16.900,00 al mes</p>
+                        <p class="price-card-accounts">1 cuenta</p>
+                      </header>
+
+                      <main class="price-card-main">
+                        <ul class="price-card-bonus-list">
+                          <li>
+                            <iconify-icon icon="radix-icons:check" class="price-card-icon"></iconify-icon>
+                            
+                            <p class="price-card-bonus">
+                              Escucha música sin anuncios
+                            </p>
+                          </li>
+
+                          <li>
+                            <iconify-icon icon="radix-icons:check" class="price-card-icon"></iconify-icon>
+                            <p class="price-card-bonus">
+                              Reproduce tus canciones en cualquier lugar, incluso sin conexión
+                            </p>
+                          </li>
+
+                          <li>
+                            <iconify-icon icon="radix-icons:check" class="price-card-icon"></iconify-icon>
+                            <p class="price-card-bonus">
+                              Reproduce canciones en el orden que quieras
+                            </p>
+                          </li>
+
+                          <li>
+                           <iconify-icon icon="radix-icons:check" class="price-card-icon"></iconify-icon>
+                           <p class="price-card-bonus">
+                              Usa la opción prepaga o suscríbete
+                            </p>
+                          </li>
+
+                          <button type="button">Empezar</button>
+                        </ul>
+
+
+                      </main>
+
+                      <footer class="price-card-footer">
+                        <p class="terms">
+                          Se aplican Términos y Condiciones.
+                        </p>
+                      </footer>
+
+                    </article>
+
+                  </li>
+                    <li class="price-card-container">
+                      <article class="price-card">
+                        <header class="price-card-header">
+                          <h3>Duo</h3>
+                          <p class="price-card-precio">$21.400,00 al mes</p>
+                          <p class="price-card-accounts">2 cuentas</p>
+                        </header>
+
+                        <main class="price-card-main">
+                          <ul class="price-card-bonus-list">
+                            <li>
+                               <iconify-icon icon="radix-icons:check" class="price-card-icon"></iconify-icon>
+                              <p class="price-card-bonus">
+                                  2 cuentas Premium para parejas que conviven
+                              </p>
+                            </li>
+
+                            <li>
+                               <iconify-icon icon="radix-icons:check" class="price-card-icon"></iconify-icon>
+                              <p class="price-card-bonus">
+                                Escucha música sin anuncions, disfruta contenido en modo offline y reproduce las canciones en cualquier orden
+                              </p>
+                            </li>
+
+                            <li>
+                               <iconify-icon icon="radix-icons:check" class="price-card-icon"></iconify-icon>
+                              <p class="price-card-bonus">
+                                Usa la opción prepaga o suscríbete
+
+                              </p>
+                            </li>
+
+                           
+
+                            <button type="button">Empezar</button>
+                          </ul>
+
+
+                        </main>
+
+                        <footer class="price-card-footer">
+                          <p class="terms">
+                            Se aplican Términos y Condiciones.
+                          </p>
+                        </footer>
+
+                      </article>
+
+                    </li>
+                    
+                    <li class="price-card-container">
+                      <article class="price-card">
+                        <header class="price-card-header">
+                          <h3>Familiar</h3>
+                          <p class="price-card-precio">$26.400,00 al mes</p>
+                          <p class="price-card-accounts">Hasta 6 cuentas</p>
+                        </header>
+
+                        <main class="price-card-main">
+                          <ul class="price-card-bonus-list">
+                            <li>
+                              <iconify-icon icon="radix-icons:check" class="price-card-icon"></iconify-icon>
+                              <p class="price-card-bonus">
+                                6 cuentas Premium para familiares que conviven
+
+                              </p>
+                            </li>
+
+                            <li>
+                              <iconify-icon icon="radix-icons:check" class="price-card-icon"></iconify-icon>
+                              <p class="price-card-bonus">
+                                Bloquea la música explícita
+
+                              </p>
+                            </li>
+
+                            <li>
+                              <iconify-icon icon="radix-icons:check" class="price-card-icon"></iconify-icon>
+                              <p class="price-card-bonus">
+                                Escucha música sin anuncios, disfruta contenido en modo offline y reproduce las canciones en cualquier orden
+
+                              </p>
+                            </li>
+
+                            <li>
+                             <iconify-icon icon="radix-icons:check" class="price-card-icon"></iconify-icon>
+                             <p class="price-card-bonus">
+                                Usa la opción prepaga o suscríbete
+                              </p>
+                            </li>
+
+                            <button type="button">Empezar</button>
+                          </ul>
+
+
+                        </main>
+
+                        <footer class="price-card-footer">
+                          <p class="terms">
+                            Se aplican Términos y Condiciones.
+                          </p>
+                        </footer>
+
+                      </article>
+
+                    </li>
+
+                    <li class="price-card-container">
+                      <article class="price-card">
+                        <header class="price-card-header">
+                          <h3>Universitario</h3>
+                          <p class="price-card-precio">$9.300,00 al mes</p>
+                          <p class="price-card-accounts">1 cuenta</p>
+                        </header>
+
+                        <main class="price-card-main">
+                          <ul class="price-card-bonus-list">
+                            <li>
+                              <iconify-icon icon="radix-icons:check" class="price-card-icon"></iconify-icon>
+                              <p class="price-card-bonus">
+                                Descuento especial para estudiantes universitarios que cumplen los requisitos
+
+                              </p>
+                            </li>
+
+                            <li>
+                              <iconify-icon icon="radix-icons:check" class="price-card-icon"></iconify-icon>
+                              <p class="price-card-bonus">
+                                Escucha música sin anuncios
+
+                              </p>
+                            </li>
+
+                            <li>
+                              <iconify-icon icon="radix-icons:check" class="price-card-icon"></iconify-icon>
+                              <p class="price-card-bonus">
+                                Reproduce tus canciones en cualquier lugar, incluso sin conexión
+
+                              </p>
+                            </li>
+
+                            <li>
+                             <iconify-icon icon="radix-icons:check" class="price-card-icon"></iconify-icon>
+                             <p class="price-card-bonus">
+                              Reproduce canciones en el orden que quieras
+
+                            </p>
+                            </li>
+
+                            <button type="button">Empezar</button>
+                          </ul>
+
+
+                        </main>
+
+                        <footer class="price-card-footer">
+                          <p class="terms">
+                            Se aplican Términos y Condiciones.
+                          </p>
+                        </footer>
+
+                      </article>
+
+                    </li>
+
+                    
+                </ul>
+            </main>
+        </article>
+      </section>
+    </main>
+
+    <footer id="main-footer">
+      <nav class="footer-nav">
+        <div class="footer-banner">
+          <img
+          src="./img/spotify-logo-png-7053.png"
+          alt=""
+          class="footer-img"
+        />
+        <h2>Spotify</h2>
+        </div>
+
+        <div class="footer-main-info">
+          <div class="footer-subdiv">
+            <p class="footer-subtitle">
+              COMPAÑÍA
+            </p>
+            <p class="footer-content">
+              Acerca de
+            </p>
+            <p class="footer-content">Empleo</p>
+            <p class="footer-content">For the Record</p>
+          </div>
+          <div class="footer-subdiv">
+            <p class="footer-subtitle">
+              COMUNIDADES
+            </p>
+            <p class="footer-content">Servicios para artistas</p>
+            <p class="footer-content">Desarrolladores</p>
+            <p class="footer-content">Publicidad</p>
+            <p class="footer-content">Inversionistas</p>
+            <p class="footer-content">Proveedores</p>
+          </div>
+          <div class="footer-subdiv">
+            <p class="footer-subtitle">
+              ENLACES ÚTILES
+            </p>
+            <p class="footer-content">Ayuda</p>
+            <p class="footer-content">Reproductor web</p>
+            <p class="footer-content">App móvil gratis</p>
+          </div>
+        </div>
+
+        <ul class="footer-rrss">
+          <a href="">
+            <iconify-icon icon="ri:instagram-line" class="footer-icon"></iconify-icon>
+          </a>
+          <a href="">
+            <iconify-icon icon="mdi:twitter" class="footer-icon"></iconify-icon>
+          </a>
+          <a href="">
+            <iconify-icon icon="gg:facebook" class="footer-icon"></iconify-icon>
+          </a>
+        </ul>
+
+          <div class="footer-country">
+            <iconify-icon icon="fluent-mdl2:world" class="footer-world-icon"></iconify-icon>
+            <p class="small-letter">Colombia</p>
+          </div>
+
+
+          <div class="container-small-items">
+            <ul class="footer-small-list">
+              <li class="small-list-item small-letter">Legal</li>
+              <li class="small-list-item small-letter">Centro de privacidad</li>
+              <li class="small-list-item small-letter">Política de Privacidad</li>
+              <li class="small-list-item small-letter">Cookies</li>
+              <li class="small-list-item small-letter">Sobre los anuncios</li>
+              <li class="small-list-item small-letter">Accesibilidad</li>
+            </ul>
+            <p class="small-letter copyright">2023 Spotify AB</p>
+          </div>
+
+
+
+      </nav>
+    </footer>
+
+  </body>
+</html>
